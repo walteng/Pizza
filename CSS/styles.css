@@ -22,15 +22,16 @@ div {
   background-size: cover;
 }
 
-nav {
-  height: 48px;
-}
+
 
 nav {
   padding: 0;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  height: 48px;
+  position: relative;
+
 }
 
 nav a {
@@ -59,3 +60,4 @@ img {
 .hom {
   text-align: center;
 }
+.charges{margin-left: 30%;}
