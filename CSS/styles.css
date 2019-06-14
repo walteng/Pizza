@@ -1,0 +1,10 @@
+
+div{padding: 6px;}
+.x{color: blue;
+background-color: red}
+.y{color: yellow;
+background-color: black;}
+.container{
+
+  max-width: 100%;
+}
