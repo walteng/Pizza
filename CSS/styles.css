@@ -1,42 +1,61 @@
-
-div{padding: 6px;
-
+div {
+  padding: 6px;
 }
-.x{color: blue;
-background-color: red}
-.y{color: yellow;
-background-color: black;}
-.container{
+
+.x {
+  color: blue;
+  background-color: red
+}
+
+.y {
+  color: yellow;
+  background-color: black;
+}
+
+.container {
   max-width: 100%;
 }
-#navbar{
+
+#navbar {
   padding: 10px;
   background-color: olive;
   background-size: cover;
-
 }
+
 nav {
-    height: 48px;
+  height: 48px;
 }
 
-nav  {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+nav {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
 }
+
 nav a {
-    font-family: fantasy;
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
-
+  font-family: fantasy;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 nav a:hover {
-    color: red;
-
+  color: red;
 }
-footer{background-color: blue;}
-img{margin-left: 30%;}
+
+footer {
+  background-color: blue;
+}
+
+img {
+  margin-left: 30%;
+}
+.image{
+  margin-left: 0;
+}
+
+.hom {
+  text-align: center;
+}
