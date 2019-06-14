@@ -1,10 +1,42 @@
 
-div{padding: 6px;}
+div{padding: 6px;
+
+}
 .x{color: blue;
 background-color: red}
 .y{color: yellow;
 background-color: black;}
 .container{
-
   max-width: 100%;
 }
+#navbar{
+  padding: 10px;
+  background-color: olive;
+  background-size: cover;
+
+}
+nav {
+    height: 48px;
+}
+
+nav  {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav a {
+    font-family: fantasy;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+nav a:hover {
+    color: red;
+
+}
+footer{background-color: blue;}
+img{margin-left: 30%;}

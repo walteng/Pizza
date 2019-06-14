@@ -6,20 +6,22 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="CSS/bootstrap-grid.css">
-  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+  <link rel="stylesheet" type="img/fav_icon"href="images/icon.jpeg">
 </head>
 
 <body>
 
   <body>
-    <div class="container container-fluid full-width">
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#" class="nav-item nav-link">Profile</a>
-            <a href="#" class="nav-item nav-link">Messages</a>
-            <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
-        </div>
+    <div class="container container-fluid">
+      <div class="collapse navbar-collapse" id="navbar">
+        <nav class="navbar-nav">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#news" class="nav-item nav-link">News</a>
+          <a href="#menu" class="nav-item nav-link">Menu</a>
+          <a href="#cont" class="nav-item nav-link">Contacts</a>
+
+        </nav>
       </div>
       <div class="row">
         <div class="column col-sm-9 x">
@@ -27,21 +29,52 @@
 
           </div>
           <div class="row">
-            <img src="" alt="">
+            <img src="images/pizza.jpeg" alt="pizza">
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-sm-4">
+              <label for="size">Size:</label>
+              <select class="size" name="">
+                <option value="large">Large</option>
+                <option value="large">Medium</option>
+                <option value="large">Small</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <label for="size">Crust:</label>
+              <select class="crust" name="">
+                <option value="crispy">Crispy</option>
+                <option value="stuffed">Stuffed</option>
+                <option value="gluten">Gluten-free</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <label for="toppings">Topping:</label>
+              <select class="topping" name="">
+                <option value="onions">Onions</option>
+                <option value="bacon">Bacon</option>
+                <option value="olive">Olive</option>
+              </select>
+            </div>
 
           </div>
         </div>
+
 
         <div class="column col-sm-3 y">
           <p>you!<br><br><br></p>
         </div>
       </div>
+      <footer>
+        <p>locations</p>
+        <p>contacts</p>
+        <p>Terms and Conditions</p>
+      </footer>
     </div>
-    <footer>
-<p>locations</p>
-<p>contacts</p>
-<p>Terms and Conditions</p>
-    </footer>
+
   </body>
 </body>
 
