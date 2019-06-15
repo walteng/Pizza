@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <title></title>
-  <link rel="stylesheet" href="CSS/bootstrap-grid.css">
+  <link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.css">
   <link rel="stylesheet" type="text/css" href="CSS/styles.css">
   <link rel="shortcut icon" href="images/icon.jpeg">
 </head>
@@ -14,113 +14,187 @@
 
 <body>
   <div class="container container-fluid">
-    <div class="navbar-default navbar-fixed-top" id="navbar">
-      <nav class="nav">
-        <a href="#home" class="nav-item nav-link active">Home</a>
-        <a href="#news" class="nav-item nav-link">News</a>
-        <a href="#menu" class="nav-item nav-link">Menu</a>
-        <a href="#cont" class="nav-item nav-link">Contacts</a>
+  <div class="bg">
 
-      </nav>
-    </div>
-    <div class="row">
-      <div class="column col-sm-9 x">
-        <div class="row">
-          <div class="col text-center hom" id="home">
-            <img class="image" src="Logo/plog.png" alt="Logo">
-            <h1>WELCOME
+      <div class="navbar-default navbar-fixed-top" id="navbar">
+        <nav class="nav">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#news" class="nav-item nav-link">News</a>
+          <a href="#menu" class="nav-item nav-link">Menu</a>
+          <a href="#cont" class="nav-item nav-link">Visit Us</a>
+
+        </nav>
+      </div>
+      <div class="row">
+        <div class="column col-sm-9">
+          <div class="row">
+            <div class="col text-center hom" id="home">
+              <img class="image" src="Logo/plog.png" alt="Logo">
+              <h1>WELCOME
+                <br>
+                TO PIZZA TAKEAWAY SHOP
+              </h1>
+              <p>WE APPECIATE YOU CHOOSING US TO SERVE YOU PIZZA AT YOUR CONVINIENCE.</p> <br><br><br>
+            </div>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="row" id="menu">
+            <img src="images/pizza.jpeg" alt="pizza">
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-sm-4">
+              <label for="size">Size:</label>
+              <select class="size" name="">
+                <option value="large">Large</option>
+                <option value="large">Medium</option>
+                <option value="large">Small</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <label for="size">Crust:</label>
+              <select class="crust" name="">
+                <option value="crispy">Crispy</option>
+                <option value="stuffed">Stuffed</option>
+                <option value="gluten">Gluten-free</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <label for="toppings">Topping:</label>
+              <select class="topping" name="">
+                <option value="onions">Onions</option>
+                <option value="bacon">Bacon</option>
+                <option value="olive">Olive</option>
+              </select>
+            </div>
+
+          </div>
+          <div class="charges">
+
+
+            <div class="row">
+              <div class="price">
+                <label for="output">Price: <br> <br> </label>
+                <input type="text" name="output" value="900">
+              </div>
+            </div>
+            <div class="row">
+              <div class="quant">
+                <label for="quantity">Quantity: <br><br> </label>
+                <input type="number" name="quantity" value="1">
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="row check">
+            <div class="col but">
+              <button type="button" name="button">Checkout</button>
+            </div>
+
+            <div class="row can">
+              <h2>Cancel</h2>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="column col-sm-3">
+          <div class="del">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col but">
+              <button type="button" name="button">DELIVERY</button>
+            </div>
+            <form action="/action_page.php">
+              Name:<br>
+              <input type="text" value="" placeholder="Enter name...">
               <br>
-              TO PIZZA TAKEAWAY SHOP
-            </h1>
-            <p>WE APPECIATE YOU CHOOSING US TO SERVE YOU PIZZA AT YOUR CONVINIENCE.</p> <br><br><br>
+              Town:<br>
+              <input type="text" value="" placeholder="Enter town...">
+              <br>
+              Street:<br>
+              <input type="text" value="" placeholder="Enter street...">
+              <br>
+              Phone:<br>
+              <input type="number" value="" placeholder="+2547....">
+              <br>
+              <input type="submit" value="Submit">
+            </form>
+
+            <br>
+            <br>
+            <br>
+
+
           </div>
-          <br>
-          <br>
-          <br>
-        </div>
-        <div class="row" id="menu">
-          <img src="images/pizza.jpeg" alt="pizza">
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col-sm-4">
-            <label for="size">Size:</label>
-            <select class="size" name="">
-              <option value="large">Large</option>
-              <option value="large">Medium</option>
-              <option value="large">Small</option>
-            </select>
-          </div>
-          <div class="col-sm-4">
-            <label for="size">Crust:</label>
-            <select class="crust" name="">
-              <option value="crispy">Crispy</option>
-              <option value="stuffed">Stuffed</option>
-              <option value="gluten">Gluten-free</option>
-            </select>
-          </div>
-          <div class="col-sm-4">
-            <label for="toppings">Topping:</label>
-            <select class="topping" name="">
-              <option value="onions">Onions</option>
-              <option value="bacon">Bacon</option>
-              <option value="olive">Olive</option>
-            </select>
-          </div>
-
-        </div>
-        <div class="charges">
-
-
-        <div class="row">
-          <div class="price">
-            <label for="output">Price: <br> <br> </label>
-            <input type="text" name="output" value="900">
         </div>
       </div>
-        <div class="row">
-          <div class="quant">
-            <label for="quantity">Quantity: <br><br> </label>
-          <input type="number" name="quantity" value="1">
-        </div>
-      </div>
-      </div>
-      <div class="row check">
-        <div class="col">
-            <button type="button" name="button">Checkout</button>
-        </div>
-      <div class="col">
-          <h2>Cancel</h2>
-      </div>
-
-      </div>
-
-      </div>
-
-
-      <div class="column col-sm-3 y">
-        <div class="row">
-          <button type="button" name="button">DELIVERY</button>
-        </div>
-<div class="row">
-  <label for="time">TIME:</label>
-  <select class="time" name="">
-    <option value="7">7 AM</option>
-    <option value="8">8 AM</option>
-    <option value="8">9 AM</option>
-  </select>
 </div>
+
+      <div class="row"id="cont">
+        <div class="col-sm-4">
+
+          <p>Locations:
+            <br>
+            <br>
+            Nairobi
+            <ul>
+              <li>Wstlands</li>
+              <li> Karen </li>
+              <li> Ngong Rd</li>
+
+            </ul>
+            Eldoret
+            <ul>
+              <li>E.View</li>
+              <li>Kapsoya</li>
+              <li>Kipkaren</li>
+
+            </ul>
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <p>Contacts:
+          </p>
+          <div class="row">
+            <div class="icons">
+              <a href="#">
+                <img src="assets/social_icons/twitter.png">
+              </a>
+              <a href="#">
+                <img src="assets/social_icons/dribble.png">
+              </a>
+              <a href="#">
+                <img src="assets/social_icons/facebook.png">
+              </a>
+              <a href="#">
+                <img src="assets/social_icons/g_plus.png">
+              </a>
+              <a href="#">
+                <img src="assets/social_icons/skype.png">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <p>Terms and Conditions</p>
+        </div>
+
       </div>
     </div>
-    <footer>
-      <p>locations</p>
-      <p>contacts</p>
-      <p>Terms and Conditions</p>
-    </footer>
-  </div>
+
   <script type="text/javascript" href="JS/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </body>
 
 
