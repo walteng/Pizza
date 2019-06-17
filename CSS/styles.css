@@ -43,8 +43,6 @@ nav a:hover {
   color: red;
 }
 
-
-
 img {
   margin-left: 30%;
 }
@@ -82,11 +80,13 @@ img {
   height: 112px;
   width: 188px;
 }
-.order{
+
+.order {
   margin-left: 35%;
-  width:112px;
+  width: 112px;
   height: 38px;
 }
+
 .can {
   margin-top: 10px;
   color: blue;
@@ -98,16 +98,24 @@ button {
   background-color: #008CBA;
   padding: 12px 40px;
 }
+
 button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-input{
+
+input {
   padding: 10px;
   margin: 4px;
 }
-a:hover{
-  cursor:pointer;
- }
-/* .input{
-  display: none;
-} */
+
+a:hover {
+  cursor: pointer;
+}
+
+output {
+  display: inline;
+}
+
+#pa {
+  background-color: blue
+}

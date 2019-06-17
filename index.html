@@ -49,7 +49,7 @@
             <div class="row" id="inpu">
               <div class="col-sm-4">
                 <label for="size">Size:</label>
-                <select onchange="myPizza()" id="size" name="siz">
+                <select onchange="getPizza()" id="size" name="siz">
                   <option value="" id="select">Select a size...</option>
                   <option data-price="5" value="1500" name="lg">Large</option>
                   <option data-price="15" value="1000" name="md">Medium</option>
@@ -59,29 +59,33 @@
 
               <div class="col-sm-4">
                 <label for="size">Crust:</label>
-                <select onchange="myPizza()" id="crust" name="crst">
+                <select onchange="getPizza()" id="crust" name="crst">
                   <option value="">Select a crust..</option>
-                  <option data-price="5" value="120">Crispy</option>
-                  <option data-price="10" value="130">Stuffed</option>
-                  <option data-price="15" value="150">Gluten-free</option>
+                  <option value="120">Crispy</option>
+                  <option value="130">Stuffed</option>
+                  <option value="150">Gluten-free</option>
                 </select>
               </div>
               <div class="col-sm-4">
                 <label for="toppings">Topping:</label>
-                <select onchange="myPizza()" id="topping" name="top">
+                <select onchange="getPizza()" id="topping" name="top">
                   <option value="" id="select">Select a topping...</option>
                   <option value="100" id="top">Onions</option>
                   <option value="140">Bacon</option>
-                  <option value="18">Olive</option>
+                  <option value="180">Olive</option>
                 </select>
 
               </div>
-
+              <br>
+              <br>
+              <div class="row">
+              <output name="amount" id="pa" for="pizzacost"></output>
+              </div>
             </div>
             <div class="charges">
               <div class="row check">
                 <div class="col but">
-                  <input onclick="myPizza()" class="Cost" type="submit" value="Checkout">
+                  <input class="Cost" type="submit" value="Checkout">
                 </div>
                 <div class="pizza-details">
                   <p>Show Details</p>
@@ -89,7 +93,7 @@
                   <div class="row">
                     <div class="price">
                       <label for="output">Price: <br> <br> </label>
-                      <input id="price" type="number" name="amount" value="700">
+                      <input id="price" type="number" name="amount" value="">
                     </div>
                   </div>
                   <div class="row">
@@ -208,14 +212,10 @@
 
     </div>
   </div>
-  <script>
-    function myPizza() {
-      var x = document.getElementById("size").selectedIndex;
-      var y = document.getElementById("crust").selectedIndex;
-      var z = document.getElementById("topping").selectedIndex;
-      alert(parseFloat(document.getElementsByTagName("option")[x].value) + parseFloat(document.getElementsByTagName("option")[y].value) + parseFloat(document.getElementsByTagName("option")[z].value));
-    }
-  </script>
+
+
+
+
   <script type="text/javascript" src="JS/app.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </body>
