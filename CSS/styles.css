@@ -58,7 +58,7 @@ img {
 }
 
 .charges {
-  margin-left: 30%;
+  margin-left: 0;
 }
 
 .check {
@@ -82,7 +82,11 @@ img {
   height: 112px;
   width: 188px;
 }
-
+.order{
+  margin-left: 35%;
+  width:112px;
+  height: 38px;
+}
 .can {
   margin-top: 10px;
   color: blue;
@@ -97,6 +101,13 @@ button {
 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-input{padding: 10px;
+input{
+  padding: 10px;
   margin: 4px;
+}
+a:hover{
+  cursor:pointer;
+ }
+.input{
+  display: none;
 }
