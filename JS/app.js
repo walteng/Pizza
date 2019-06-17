@@ -7,7 +7,7 @@ function getPizza() {
   var y = document.getElementById("crust").selectedIndex;
   var z = document.getElementById("topping").selectedIndex;
   p.innerHTML = parseFloat(document.getElementsByTagName("option")[x].value) + parseFloat(document.getElementsByTagName("option")[y].value) + parseFloat(document.getElementsByTagName("option")[z].value)
-}
+} 
 
 
 
