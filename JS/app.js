@@ -8,6 +8,7 @@
 //   var z = document.getElementById("topping").selectedIndex;
 //   p.innerHTML = parseFloat(document.getElementsByTagName("option")[x].value) + parseFloat(document.getElementsByTagName("option")[y].value) + parseFloat(document.getElementsByTagName("option")[z].value)
 // }
+var finalOrderCost = [];
 
 function Order(size, crust, topping) {
   this.customSize = size;
@@ -15,7 +16,7 @@ function Order(size, crust, topping) {
   this.customTopping = topping;
   this.pizzaPrice = 0;
 }
-var finalOrderCost = [];
+
 
 var selectSize = ["Small", "Medium", "Large"];
 var selectCrust = ["Crispy", "Stuffed", "Gluten-free"];
@@ -46,9 +47,9 @@ Order.prototype.pizzaCost = function() {
 
 return this.pizzaPrice;
 }
-Order.prototype.deliveryCharges = function() {
-  return this.deliveryCost;
-}
+// Order.prototype.deliveryCharges = function() {
+//   return this.deliveryCost;
+// }
 
 
 Order.prototype.finalCost = function() {
@@ -63,17 +64,18 @@ Order.prototype.finalCost = function() {
 
 
 $(document).ready(function() {
-  $(".check").click(function(event) {
+  $(".Cost").click(function(event) {
     event.preventDefault();
-    var size = $("select#size").val();
-    var crust = $("select#crust").val();
-    var topping = $("select#topping").val();
-    var newCustomer = new Order(size, crust, topping);
-    newCustomer.pizzaCost();
-    finalOrderCost.push(newCustomer.price);
-    $("#p").text("pizza :" + size);
-    $("#pa").text("crust  :" + crust);
-    $("#paa").text("topping  :" + topping);
-    $("#paaa").text("total cost  :" + newCustomer.pizzaCost());
+    var custom1Size = $("select#size").val();
+    var custom1Crust = $("select#crust").val();
+    var custom1Topping = $("select#topping").val();
+
+    var newCustomer = new Order(custom1Size, custom1Crust, custom1Topping);
+    var pizzaCost = parseInt(custom1Size) + parseInt( custom1Crust) + parseInt(custom1Topping);
+    finalOrderCost.push(newCustomer.pizzaPrice);
+    $("#p").text("pizza :" + custom1Size);
+    $("#pa").text("crust  :" + custom1Crust);
+    $("#paa").text("topping  :" + custom1Topping);
+    $("#paaa").text("total cost  :" + pizzaCost);
   });
 });
