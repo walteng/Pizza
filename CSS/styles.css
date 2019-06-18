@@ -115,3 +115,7 @@ a:hover {
 output {
   display: inline;
 }
+.deli{display: block;
+margin-left: 30%;
+margin-top:700px;
+margin-bottom: 0;}

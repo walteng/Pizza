@@ -18,6 +18,7 @@
   <div class="navbar-default navbar-fixed-top" id="navbar">
     <nav class="nav">
       <a href="#home" class="nav-item nav-link active">Home</a>
+      <a href="#news" class="nav-item nav-link active">News</a>
       <a href="#menu" class="nav-item nav-link">Menu</a>
       <a href="#cont" class="nav-item nav-link">Visit Us</a>
 
@@ -77,114 +78,100 @@
                 </select>
 
               </div>
-              <br>
-              <br>
               <div class="col">
-                <output name="amount" id="p"> </output>
-              </div>
-              <br>
-              <br>
-              <div class="col">
-                <output name="amount" id="pa"></output>
-              </div>
-              <br>
-              <br>
-              <div class="col">
+                <label for="place">Delivery:</label>
+                <select id="location" name="place">
+                  <option value="">Select a location...</option>
+                  <option value="150">Westlands</option>
+                  <option value="200">Ngong Rd</option>
+                  <option value="300">Karen</option>
+                </select>
 
-                <output name="amount" id="paa"></output>
               </div>
               <br>
               <br>
               <div class="col">
-
-                <output name="amount" id="paaa"></output>
-              </div>
-            </div>
-            <div class="charges">
-              <div class="row check">
-                <div class="col but">
-                  <input class="Cost" type="submit" value="Checkout">
+                <div class="row">
+                  <output name="amount" id="p"> </output>
                 </div>
 
+                <div class="row">
+                  <output name="amount" id="pa"></output>
+                </div>
+
+                <div class="row">
+                  <output name="amount" id="paa"></output>
+                </div>
+
+                <div class="row">
+                  <output name="amount" id="par"></output>
+                </div>
+
+                <div class="row">
+                  <output name="amount" id="paaa"></output>
+                </div>
+              </div>
+
+              <div class="charges">
+                <div class="row check">
+
+                  <div class="col but">
+                    <input class="Cost" type="submit" value="Checkout">
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-
         <div class="column col-sm-3">
-          <div class="del">
-            <br>
-            <br>
-            <br>
-            <br>
+          <div id="news">
+
             <div class="col but">
-              <button class="delv" type="button" name="button">DELIVERY</button>
+              <input class="deli" type="submit" value="Order Now!!!">
             </div>
-            <form action="/action_page.php" class="input">
-              Name:<br>
-              <input type="text" value="" placeholder="Enter name...">
-              <br>
-              Town:<br>
-              <input type="text" value="" placeholder="Enter town...">
-              <br>
-              Street:<br>
-              <input type="text" value="" placeholder="Enter street...">
-              <br>
-              Phone:<br>
-              <input type="number" value="" placeholder="+2547....">
-              <br>
-              Charges:<br>
-              <input type="text" name="output" value="150">
-
-              <input type="submit" value="Ok">
-            </form>
-
-            <br>
-            <br>
-            <br>
-
           </div>
         </div>
       </div>
+
     </div>
-  </div>
 
-  <div class="row" id="cont">
-    <div class="col-sm-4">
+    <div class="row" id="cont">
+      <div class="col-sm-4">
 
-      <p>Locations:
-        <br>
-        <br>
-        Nairobi
-        <ul>
-          <li>Wstlands</li>
-          <li> Karen </li>
-          <li> Ngong Rd</li>
+        <p>Locations:
+          <br>
+          <br>
+          Nairobi
+          <ul>
+            <li>Wstlands</li>
+            <li> Karen </li>
+            <li> Ngong Rd</li>
 
-        </ul>
-        Eldoret
-        <ul>
-          <li>E.View</li>
-          <li>Kapsoya</li>
-          <li>Kipkaren</li>
+          </ul>
+          Eldoret
+          <ul>
+            <li>E.View</li>
+            <li>Kapsoya</li>
+            <li>Kipkaren</li>
 
-        </ul>
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Terms and Conditions</h3>
-      Once order is placed cannot be cancelled
-    </div>
-    <div class="col-sm-4">
-      <p>Contacts:
-      </p>
-      <div class="row">
-        Tel: 2574909300030899
-        Email: nsnn@gmail.
+          </ul>
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Terms and Conditions</h3>
+        Once order is placed cannot be cancelled
+      </div>
+      <div class="col-sm-4">
+        <p>Contacts:
+        </p>
+        <div class="row">
+          Tel: 2574909300030899
+          Email: nsnn@gmail.
+        </div>
       </div>
     </div>
-  </div>
   </div>
 
 

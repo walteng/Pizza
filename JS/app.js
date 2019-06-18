@@ -14,6 +14,7 @@ function Order(size, crust, topping) {
   this.customSize = size;
   this.customCrust = crust;
   this.customTopping = topping;
+  this.customPlace = location;
   this.pizzaPrice = 0;
 }
 
@@ -21,6 +22,7 @@ function Order(size, crust, topping) {
 var selectSize = ["Small", "Medium", "Large"];
 var selectCrust = ["Crispy", "Stuffed", "Gluten-free"];
 var selectTopping = ["Bacon", "Chicken", "Beef", "Vegetables"];
+var selectLocation = ["Westlands", "Ngong Rd", "Karen"];
 
 Order.prototype.pizzaCost = function() {
   if (this.customSize === selectSize[1]) {
@@ -44,12 +46,17 @@ Order.prototype.pizzaCost = function() {
   } else if (this.customTopping === selectTopping[3]) {
     this.pizzaPrice += 200;
   }
+  if (this.customPlace === selectLocation[1]) {
+    this.pizzaPrice += 150;
+  } else if (this.customPlace === selectLocation[2]) {
+    this.pizzaPrice += 200;
+  } else if (this.customPlace === selectLocation[3]) {
+    this.pizzaPrice += 300;
+  }
 
-return this.pizzaPrice;
+  return this.pizzaPrice;
 }
-// Order.prototype.deliveryCharges = function() {
-//   return this.deliveryCost;
-// }
+
 
 
 Order.prototype.finalCost = function() {
@@ -69,13 +76,18 @@ $(document).ready(function() {
     var custom1Size = $("select#size").val();
     var custom1Crust = $("select#crust").val();
     var custom1Topping = $("select#topping").val();
-
-    var newCustomer = new Order(custom1Size, custom1Crust, custom1Topping);
-    var pizzaCost = parseInt(custom1Size) + parseInt( custom1Crust) + parseInt(custom1Topping);
+    var custom1Place = $("select#location").val();
+    var newCustomer = new Order(custom1Size, custom1Crust, custom1Topping, custom1Place);
+    var pizzaCost = parseInt(custom1Size) + parseInt(custom1Crust) + parseInt(custom1Topping) + parseInt(custom1Place);
     finalOrderCost.push(newCustomer.pizzaPrice);
-    $("#p").text("pizza :" + custom1Size);
-    $("#pa").text("crust  :" + custom1Crust);
-    $("#paa").text("topping  :" + custom1Topping);
-    $("#paaa").text("total cost  :" + pizzaCost);
+    $("#p").text("Pizza :" + " " + custom1Size);
+    $("#pa").text("Crust :" + " " + custom1Crust);
+    $("#paa").text("Topping :" + " " + custom1Topping);
+    $("#par").text("Delivery :" + " " + custom1Place);
+    $("#paaa").text("Total :" + " " + pizzaCost);
+    $(".deli").click(function(event) {
+      alert("Your will be delivered to your place "+"at  "+pizzaCost+". Thank you for shopping with us.")
+    });
   });
+
 });
